@@ -11,4 +11,12 @@ class Matrix
   def matrix_rows(row_index)
     @rows[row_index]
   end
+
+  def matrix_columns(column_index)
+    col = []
+    @rows.each do |i|
+      col << i[column_index]
+    end
+    col
+  end
 end
