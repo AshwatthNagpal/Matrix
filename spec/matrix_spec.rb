@@ -12,4 +12,8 @@ describe "Matrix" do
     mat_obj = Matrix.new("9 8 7\n19 18 17")
     expect(mat_obj.matrix_rows(1)).to eq [19, 18, 17]
   end
+  it "test extract row \"1 4 9\n16 25 36\"" do
+    mat_obj = Matrix.new("1 4 9\n16 25 36")
+    expect(mat_obj.matrix_rows(1)).to eq [16, 25, 36]
+  end
 end
