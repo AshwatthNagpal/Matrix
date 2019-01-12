@@ -20,4 +20,8 @@ describe "Matrix" do
     mat_obj = Matrix.new("89 1903 3\n18 3 1\n9 4 800")
     expect(mat_obj.matrix_columns(1)).to eq [1903, 3, 4]
   end
+  it "test extract column \"1 2 3\n4 5 6\n 7 8 9\n8 7 6\"" do
+    mat_obj = Matrix.new("1 2 3\n4 5 6\n 7 8 9\n8 7 6")
+    expect(mat_obj.matrix_columns(0)).to eq [1,4,7,8]
+  end
 end
